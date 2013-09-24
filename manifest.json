@@ -1,0 +1,20 @@
+{
+  "name": "A new context menu item what creates a link with a parameter from the html",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js":["content.js"]
+    }
+   ],
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*", "contextMenus"
+  ],
+  "icons": {
+    "16": "icon.png"
+  },
+  "background": {
+    "scripts": ["context.js"]
+  },
+  "manifest_version": 2
+}
